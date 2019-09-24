@@ -1,0 +1,16 @@
+<html>
+	<body style="margin:0; padding:20">
+		<h1>Welcome to the Auto-Grader</h1>
+		<p>Please submit your add.go file for auto-grading.</p>
+		<form action = "http://localhost:5000/" method = "POST" 
+		enctype = "multipart/form-data">
+			<input type = "file" name = "file" />
+			<input type = "submit"/>
+		</form>
+		<div>
+			<h3>{{result}}</h3>
+			<h5>{{filename}}</h5>
+			<pre><code>{{code}}</code></pre>
+		</div>
+	</body>
+</html>
